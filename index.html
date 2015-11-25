@@ -5,19 +5,25 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/responsive.css">
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/picturefill.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		
-		<title></title>
+		<title>Honey Bear Restaurant</title>
 	</head>
 	<body>
 		<div class="container-fluid container">
 
 			<!-- Header -->
 			<header class="row">
-					<img class="img-responsive logo" src="img/logo03.png" alt="HoneyBear logo">
+				<img class="img-responsive logo" src="img/logo03.png" alt="HoneyBear logo">
+					<!-- Social Media Buttons -->
+				<div class="social-media-buttons">
+					<a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a>
+					<a href="#" target="_blank"><i class="fa fa-twitter-square"></i></a>
+					<a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+				</div>
 			</header>
 
 			<nav class="row">
@@ -239,5 +245,29 @@
 				<a class="attribution" href="ikisler.github.io/portfolio">Created by Isabeau Kisler</a>
 			</footer>
 		</div>
+
+		<!-- Scroll to top button and script -->
+		<a href="#" class="scrollToTop"><i class="fa fa-caret-up"></i></a>
+		<script>
+		// Scroll to top button
+		$(document).ready(function(){
+			
+			//Check to see if the window is top if not then display button
+			$(window).scroll(function(){
+			if ($(this).scrollTop() > 100) {
+				$('.scrollToTop').fadeIn();
+			} else {
+				$('.scrollToTop').fadeOut();
+			}
+			});
+			
+			//Click event to scroll to top
+			$('.scrollToTop').click(function(){
+			$('html, body').animate({scrollTop : 0},800);
+			return false;
+			});
+			
+		});
+		</script>
 	</body>
 </html>

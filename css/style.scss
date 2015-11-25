@@ -8,6 +8,7 @@ $centerAlignMargin: 15px auto;
 
 $headerFonts:  4em 'Brush Script MT', 'Lucida Bright', cursive;
 $centerAlignText: center;
+$rightAlignText: right;
 
 $navFontSize: 2.5em;
 $linkColor: #ffcc66;
@@ -20,6 +21,12 @@ $foodMargin: 0 30px;
 $foodDescriptionFont: 0.9em;
 
 $aboutDescriptionMargin: 0 30px 30px 30px;
+
+/*** Fontawesome Icons ***/
+.fa:before {
+	font: 2em "FontAwesome", sans-serif;
+	color: #fff;
+}
 
 .container {
 	background-color: darken($mainBgColor, 25%);
@@ -37,6 +44,11 @@ body {
 
 .logo {
 	margin: $centerAlignMargin;
+}
+
+.social-media-buttons {
+	text-align: $rightAlignText;
+	padding: $foodMargin;
 }
 
 h1 {
@@ -89,7 +101,27 @@ a {
 }
 
 footer {
-	text-align: right;
+	text-align: $rightAlignText;
 	margin: $centerAlignMargin;
 	padding: 10px;
+}
+
+/*** Scroll to top button ***/
+.scrollToTop{
+	width: 70px; 
+	height: 60px;
+	padding: 10px; 
+	position: fixed;
+	top: 75px;
+	right: 10px;
+	display: none;
+}
+
+.scrollToTop img {
+	width: 50px;
+	height: 50px;
+}
+
+.scrollToTop:hover{
+	text-decoration:none;
 }

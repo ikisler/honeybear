@@ -1,3 +1,8 @@
+/*** Fontawesome Icons ***/
+.fa:before {
+  font: 2em "FontAwesome", sans-serif;
+  color: #fff; }
+
 .container {
   background-color: #22605d;
   opacity: 0.9; }
@@ -11,6 +16,10 @@ body {
 
 .logo {
   margin: 15px auto; }
+
+.social-media-buttons {
+  text-align: right;
+  padding: 0 30px; }
 
 h1 {
   font: 4em "Brush Script MT", "Lucida Bright", cursive;
@@ -52,5 +61,22 @@ footer {
   text-align: right;
   margin: 15px auto;
   padding: 10px; }
+
+/*** Scroll to top button ***/
+.scrollToTop {
+  width: 70px;
+  height: 60px;
+  padding: 10px;
+  position: fixed;
+  top: 75px;
+  right: 10px;
+  display: none; }
+
+.scrollToTop img {
+  width: 50px;
+  height: 50px; }
+
+.scrollToTop:hover {
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
