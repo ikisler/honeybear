@@ -1,15 +1,23 @@
+.container {
+  background-color: #22605d;
+  opacity: 0.9; }
+
 body {
   background: url(../img/background07.png) no-repeat center/cover fixed;
   background-color: #44bdb8;
   font: 20px arial, sans-serif;
-  color: #fff; }
+  color: #fff;
+  line-height: 130%; }
 
 .logo {
-  margin: 5px auto; }
+  margin: 15px auto; }
 
 h1 {
   font: 4em "Brush Script MT", "Lucida Bright", cursive;
   text-align: center; }
+
+.nav-link {
+  font-size: 2.5em; }
 
 a {
   color: #ffcc66; }
@@ -25,5 +33,24 @@ a {
   font: 4em "Brush Script MT", "Lucida Bright", cursive;
   font-size: 2em;
   text-align: center; }
+
+.food-item {
+  margin: 0 30px; }
+
+.food-description {
+  margin: 15px auto;
+  margin-top: 0;
+  font-size: 0.9em; }
+
+.specials {
+  text-align: center; }
+
+.about p {
+  margin: 0 30px 30px 30px; }
+
+footer {
+  text-align: right;
+  margin: 15px auto;
+  padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */

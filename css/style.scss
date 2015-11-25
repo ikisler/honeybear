@@ -2,23 +2,36 @@ $mainBG: url(../img/background07.png) no-repeat center/ cover fixed;
 $mainBgColor: #44bdb8;
 $mainFont: 20px arial, sans-serif;
 $mainFontColor: #fff;
+$mainLineHeight: 130%;
 
-$centerAlignMargin: 5px auto;
+$centerAlignMargin: 15px auto;
 
 $headerFonts:  4em 'Brush Script MT', 'Lucida Bright', cursive;
-$headerAlign: center;
+$centerAlignText: center;
 
+$navFontSize: 2.5em;
 $linkColor: #ffcc66;
 $noUnderline: none;
-$textShadow: 0px 0px 10px darken(#44bdb8, 80%);
+$textShadow: 0px 0px 10px darken($mainBgColor, 80%);
 
 $menuBoxHeight: 350px;
+$menuCategoryHeaderFont: 2em;
+$foodMargin: 0 30px;
+$foodDescriptionFont: 0.9em;
+
+$aboutDescriptionMargin: 0 30px 30px 30px;
+
+.container {
+	background-color: darken($mainBgColor, 25%);
+	opacity: 0.9;
+}
 
 body {
 	background: $mainBG;
 	background-color: $mainBgColor;
 	font: $mainFont;
 	color: $mainFontColor;
+	line-height: $mainLineHeight;
 	
 }
 
@@ -28,7 +41,11 @@ body {
 
 h1 {
 	font: $headerFonts;
-	text-align: $headerAlign;
+	text-align: $centerAlignText;
+}
+
+.nav-link {
+	font-size: $navFontSize;
 }
 
 a {
@@ -47,6 +64,32 @@ a {
 
 .menu-category-header {
 	font: $headerFonts;
-	font-size: 2em;
-	text-align: $headerAlign;
+	font-size: $menuCategoryHeaderFont;
+	text-align: $centerAlignText;
+}
+
+.food-item {
+	margin: $foodMargin;
+}
+
+.food-description {
+	margin: $centerAlignMargin;
+	margin-top: 0;
+	font-size: $foodDescriptionFont;
+}
+
+.specials {
+	text-align: $centerAlignText;
+}
+
+.about {
+	p {
+		margin: $aboutDescriptionMargin;
+	}
+}
+
+footer {
+	text-align: right;
+	margin: $centerAlignMargin;
+	padding: 10px;
 }
