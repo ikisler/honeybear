@@ -1,0 +1,240 @@
+@import url("http://fonts.googleapis.com/css?family=Noto+Sans");
+
+/*** Fontawesome Icons ***/
+.fa:before {
+	display: inline-block;
+	font: 2em "FontAwesome", sans-serif;
+	color: #5d3204;
+	padding-left: 10px;
+}
+
+body {
+	background: url(../img/background07.png) no-repeat center center fixed;
+	//background: url(../img/background09.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: #44bdb8;
+	font-family: "Noto Sans", sans-serif;
+	color: #fff;
+}
+
+.container {
+	//background-color: #000;
+	//opacity: 0.6;
+	//box-shadow: 5px 5px 10px #aaa, -5px 5px 10px #aaa;
+}
+
+/*** Scroll to top button ***/
+.scrollToTop{
+	width: 70px; 
+	height: 60px;
+	padding: 10px; 
+	position: fixed;
+	top: 75px;
+	right: 10px;
+	display: none;
+}
+
+.scrollToTop img {
+	width: 50px;
+	height: 50px;
+}
+
+.scrollToTop:hover{
+	text-decoration: none;
+}
+
+h1 {
+	font-family: 'Brush Script MT', 'Lucida Bright', cursive;
+	font-size: 6em;
+}
+
+/*** Header Section ***/
+header {
+	//color: #5d3204;
+	//padding: 1em 0;
+	//border-bottom: 2px solid #629c39;
+}
+
+.logo {
+	margin: 5px auto;
+}
+
+.title-name {
+	font-size: 3.5em;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.title-subtitle {
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.headshot {
+	max-width: 145px;
+	height: auto;
+}
+
+/*** Navigation ***/
+.nav-link {
+	color: #fff;
+	font-size: 3.5em;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0; margin: 0;
+	text-align: center;
+}
+
+li {
+	display: inline-block;
+	padding-right: 40px;
+}
+
+/*** Hero Image ***/
+.hero-img {
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-top: 5px;
+}
+
+.hero {
+	position: relative;
+}
+
+.contact-button {
+	position: absolute;
+	right: 15px;
+	bottom: 60px;
+	color: #fff;
+	font-size: 2em;
+	background-color: #629c39;
+	width: 210px;
+	height: 60px;
+	padding: 8px 15px 8px 15px;
+	z-index: 10;
+}
+
+.overlay {
+	color: #fff;
+	font-size: 2.3em;
+	position: absolute;
+	top: 10px;
+	z-index: 11;
+}
+
+.overlay ul {
+	list-style-type: none;
+}
+
+.overlay li {
+	padding-right: 20px;
+	display: inline-block;
+}
+
+/*** Main Body Section ***/
+.title-featured {
+	color: #40185b;
+	padding-bottom: 5px;
+}
+
+.featured {
+	color: #40185b;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+h3 {
+	margin: 0;
+}
+
+.featured img {
+	//border: 1px solid #40185b;
+	border: 5px solid #000;
+	border-top-width: 20px;
+	border-bottom-width: 30px;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.mobile-project-img {
+	margin-left: 0;
+}
+
+p {
+	margin-bottom: 0;
+	font-size: 1.2em;
+}
+
+.description {
+	text-align: left;
+	padding-bottom: 20px;
+}
+
+.nohover:hover {
+	text-decoration: none;
+}
+
+a {
+	color: #fff;
+}
+
+a:hover {
+	color: #5d3204;	
+}
+
+
+/*** Footer ***/
+.footer {
+	color: #5d3204;
+	text-align: right;
+	margin: 20px auto;
+	border-top: 2px solid #629c39;
+}
+
+/*** Project Info Modals ***/
+.modal-body,
+.modal-footer {
+	background: #bbe39e;
+}
+
+.modal-header {
+	background: #629c39;
+	color: #fff;
+	font-size: 2em;
+	padding: 0px 10px;
+}
+
+.modal-close {
+	color: #fff;
+	background: #629c39;
+	font-size: 1.5em;
+	padding: 5px;
+}
+
+.modal-close:hover {
+	color: #fff;
+	background: #5d3204;
+	text-decoration: none;
+}
+
+.modal img {
+	border: 1px solid #40185b;
+}
+
+.modal-description {
+	font-size: 1.2em;
+}
+
+/*** Debugging Code ***/
+/* For when I break things :P */
+/* * {
+	border-style: solid;
+	border-width: 2px;
+	border-color: red;
+}*/

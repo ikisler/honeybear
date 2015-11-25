@@ -1,0 +1,52 @@
+$mainBG: url(../img/background07.png) no-repeat center/ cover fixed;
+$mainBgColor: #44bdb8;
+$mainFont: 20px arial, sans-serif;
+$mainFontColor: #fff;
+
+$centerAlignMargin: 5px auto;
+
+$headerFonts:  4em 'Brush Script MT', 'Lucida Bright', cursive;
+$headerAlign: center;
+
+$linkColor: #ffcc66;
+$noUnderline: none;
+$textShadow: 0px 0px 10px darken(#44bdb8, 80%);
+
+$menuBoxHeight: 350px;
+
+body {
+	background: $mainBG;
+	background-color: $mainBgColor;
+	font: $mainFont;
+	color: $mainFontColor;
+	
+}
+
+.logo {
+	margin: $centerAlignMargin;
+}
+
+h1 {
+	font: $headerFonts;
+	text-align: $headerAlign;
+}
+
+a {
+	color: $linkColor;
+
+	&:hover {
+		text-decoration: $noUnderline;
+		color: $linkColor;
+		text-shadow: $textShadow;
+	}
+}
+
+.col-sm-4 {
+	height: $menuBoxHeight;
+}
+
+.menu-category-header {
+	font: $headerFonts;
+	font-size: 2em;
+	text-align: $headerAlign;
+}
