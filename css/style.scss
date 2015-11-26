@@ -4,18 +4,20 @@ $mainFont: 20px arial, sans-serif;
 $mainFontColor: #fff;
 $mainLineHeight: 130%;
 
+$accentBG: url(../img/food-plate-toast-restaurant02.jpg) no-repeat center/ cover fixed;
+
 $centerAlignMargin: 15px auto;
 
 $headerFonts:  4em 'Brush Script MT', 'Lucida Bright', cursive;
 $centerAlignText: center;
 $rightAlignText: right;
 
+$navAndFooterBG: #000;
 $navFontSize: 2.5em;
 $linkColor: #ffcc66;
 $noUnderline: none;
 $textShadow: 0px 0px 10px darken($mainBgColor, 80%);
 
-$menuBoxHeight: 350px;
 $menuCategoryHeaderFont: 2em;
 $foodMargin: 0 30px;
 $foodDescriptionFont: 0.9em;
@@ -28,11 +30,6 @@ $aboutDescriptionMargin: 0 30px 30px 30px;
 	color: #fff;
 }
 
-.container {
-	background-color: darken($mainBgColor, 25%);
-	opacity: 0.9;
-}
-
 body {
 	background: $mainBG;
 	background-color: $mainBgColor;
@@ -40,6 +37,10 @@ body {
 	color: $mainFontColor;
 	line-height: $mainLineHeight;
 	
+}
+
+p {
+	margin: $aboutDescriptionMargin;
 }
 
 .logo {
@@ -56,6 +57,10 @@ h1 {
 	text-align: $centerAlignText;
 }
 
+nav {
+	background-color: $navAndFooterBG;
+}
+
 .nav-link {
 	font-size: $navFontSize;
 }
@@ -70,14 +75,23 @@ a {
 	}
 }
 
+header {
+	background: $accentBG;
+	padding: 15px;
+}
+
 .col-sm-4 {
-	height: $menuBoxHeight;
+	padding-bottom: 10px;
 }
 
 .menu-category-header {
 	font: $headerFonts;
 	font-size: $menuCategoryHeaderFont;
 	text-align: $centerAlignText;
+
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 .food-item {
@@ -92,18 +106,17 @@ a {
 
 .specials {
 	text-align: $centerAlignText;
+	background: $accentBG;
 }
 
 .about {
-	p {
-		margin: $aboutDescriptionMargin;
-	}
+	background: $accentBG;
 }
 
 footer {
 	text-align: $rightAlignText;
-	margin: $centerAlignMargin;
-	padding: 10px;
+	padding: 15px;
+	background-color: $navAndFooterBG;
 }
 
 /*** Scroll to top button ***/
