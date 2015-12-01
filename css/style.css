@@ -1,34 +1,39 @@
+header {
+  background: url(../img/dinner-1250x938.jpg) no-repeat center/cover fixed; }
+
+.specials {
+  background: url(../img/dinner-1250x938.jpg) no-repeat center/cover fixed; }
+
+.about {
+  background: url(../img/dinner-1250x938.jpg) no-repeat center/cover fixed; }
+
+body {
+  background: url(../img/bricks-1350x900.jpg) no-repeat center/cover fixed; }
+
 /*** Fontawesome Icons ***/
 .fa:before {
   font: 2em "FontAwesome", sans-serif;
   color: #fff; }
 
-body {
-  background: url(../img/background07.png) no-repeat center/cover fixed;
-  background-color: #44bdb8;
-  font: 20px arial, sans-serif;
-  color: #fff;
-  line-height: 130%; }
-
-p {
-  margin: 0 30px 30px 30px; }
-
-.logo {
-  margin: 15px auto; }
-
 .social-media-buttons {
   text-align: right;
   padding: 0 30px; }
 
+body {
+  font: 20px arial, sans-serif;
+  color: #fff;
+  line-height: 130%; }
+
+header, .menu, .specials, .location, .about {
+  border-bottom: solid 30px black; }
+
+p {
+  margin: 0 30px 30px 30px; }
+
 h1 {
   font: 4em "Brush Script MT", "Lucida Bright", cursive;
-  text-align: center; }
-
-nav {
-  background-color: #000; }
-
-.nav-link {
-  font-size: 2.5em; }
+  text-align: center;
+  margin-top: 0; }
 
 a {
   color: #ffcc66; }
@@ -37,10 +42,21 @@ a {
     color: #ffcc66;
     text-shadow: 0px 0px 10px black; }
 
+/*** Navigation ***/
+nav {
+  background-color: #000; }
+
+.nav-link {
+  font-size: 2.5em; }
+
+/*** Header and Logo ***/
 header {
-  background: url(../img/food-plate-toast-restaurant02.jpg) no-repeat center/cover fixed;
   padding: 15px; }
 
+.logo {
+  margin: 15px auto; }
+
+/*** Menu Section ***/
 .col-sm-4 {
   padding-bottom: 10px; }
 
@@ -59,13 +75,11 @@ header {
   margin-top: 0;
   font-size: 0.9em; }
 
+/*** Specials Section ***/
 .specials {
-  text-align: center;
-  background: url(../img/food-plate-toast-restaurant02.jpg) no-repeat center/cover fixed; }
+  text-align: center; }
 
-.about {
-  background: url(../img/food-plate-toast-restaurant02.jpg) no-repeat center/cover fixed; }
-
+/*** Footer ***/
 footer {
   text-align: right;
   padding: 15px;
@@ -87,5 +101,72 @@ footer {
 
 .scrollToTop:hover {
   text-decoration: none; }
+
+/*** Responsive ***/
+@media (max-width: 500px) {
+  header {
+    background: url(../img/dinner-500x375.jpg) no-repeat center/cover fixed; }
+
+  .specials {
+    background: url(../img/dinner-500x375.jpg) no-repeat center/cover fixed; }
+
+  .about {
+    background: url(../img/dinner-500x375.jpg) no-repeat center/cover fixed; }
+
+  body {
+    background: url(../img/bricks-500x333.jpg) no-repeat center/cover fixed; } }
+@media (max-width: 700px) {
+  .logo {
+    width: 20%;
+    min-width: 100px;
+    margin: 0 5px 0 0;
+    display: inline-block; }
+
+  header {
+    vertical-align: middle; }
+    header h1 {
+      display: none;
+      font-size: 1.5em; }
+
+  .social-media-buttons {
+    display: inline-block;
+    float: right;
+    margin: 15px 0; }
+
+  .nav-link {
+    font-size: 1.5em; }
+
+  h1 {
+    font-size: 2.5em; }
+
+  .menu-category-header {
+    font-size: 1.8em; }
+
+  body {
+    font-size: 18px; } }
+@media (max-width: 750px) {
+  header {
+    background: url(../img/dinner-750x563.jpg) no-repeat center/cover fixed; }
+
+  .specials {
+    background: url(../img/dinner-750x563.jpg) no-repeat center/cover fixed; }
+
+  .about {
+    background: url(../img/dinner-750x563.jpg) no-repeat center/cover fixed; }
+
+  body {
+    background: url(../img/bricks-750x500.jpg) no-repeat center/cover fixed; } }
+@media (max-width: 1000px) {
+  header {
+    background: url(../img/dinner-1000x750.jpg) no-repeat center/cover fixed; }
+
+  .specials {
+    background: url(../img/dinner-1000x750.jpg) no-repeat center/cover fixed; }
+
+  .about {
+    background: url(../img/dinner-1000x750.jpg) no-repeat center/cover fixed; }
+
+  body {
+    background: url(../img/bricks-1000x667.jpg) no-repeat center/cover fixed; } }
 
 /*# sourceMappingURL=style.css.map */
