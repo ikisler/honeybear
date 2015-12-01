@@ -204,8 +204,6 @@
 			var menuBox = $('.col-sm-4');
 
 			menuBox.each(function(index) {
-				console.log( index + ": " + $( this ).text() );
-
 				$(this).click(function(){
 					$(this).children('.food-item').toggle('fast');
 				});
