@@ -26,8 +26,12 @@ $menuCategoryHeaderFont: 2em;
 $foodMargin: 0 30px;
 $foodDescriptionFont: 0.9em;
 
+$mapHeight: 300px;
+$mapWidth: 500px;
+
 $aboutDescriptionMargin: 0 30px 30px 30px;
 
+// Set up backgrounds
 @each $section in $sectionsMainBG {
 	#{$section} {
 		background: $mainBG;
@@ -51,6 +55,7 @@ $aboutDescriptionMargin: 0 30px 30px 30px;
 	padding: $foodMargin;
 }
 
+/*** General Styles ***/
 body {
 	font: $mainFont;
 	color: $mainFontColor;
@@ -128,6 +133,14 @@ header {
 /*** Specials Section ***/
 .specials {
 	text-align: $centerAlignText;
+}
+
+/*** Location Map ***/
+#map-canvas {
+	height: $mapHeight;
+	max-width: $mapWidth;
+	margin: $centerAlignMargin;
+	margin-bottom: 25px;
 }
 
 /*** Footer ***/

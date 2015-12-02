@@ -19,6 +19,7 @@ body {
   text-align: right;
   padding: 0 30px; }
 
+/*** General Styles ***/
 body {
   font: 20px arial, sans-serif;
   color: #fff;
@@ -78,6 +79,13 @@ header {
 /*** Specials Section ***/
 .specials {
   text-align: center; }
+
+/*** Location Map ***/
+#map-canvas {
+  height: 300px;
+  max-width: 500px;
+  margin: 15px auto;
+  margin-bottom: 25px; }
 
 /*** Footer ***/
 footer {

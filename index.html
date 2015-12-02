@@ -159,8 +159,10 @@
 					<h1 id="location">Location</h1>
 					<section class="row">
 						<div class="col-sm-12">
-							<p>HoneyBear Restaurant is located at 1123 Fake Ave., Marysville, WA.</p>
-							<map>Insert a map here</map>
+							<p>Honey Bear Restaurant is located at 1234 Fake St, Marysville WA.</p>
+							<map>
+								<div id="map-canvas" style=""></div>
+							</map>
 						</div>
 					</section>
 				</section>
@@ -169,7 +171,7 @@
 					<h1 id="about">About</h1>
 					<section class="row">
 						<div class="col-sm-12">
-							<p>Honey Bear Restaurant is a classic American eatery with some European details.  We believe in offering food made from only the freshest ingredients, sourced as locally as possible.  We do this because we believe that the freshness of our ingredients directly effects the taste of our food, as well as the importance of supporting the local economy.</p>
+							<p>Honey Bear Restaurant is a classic American eatery with some European details.  We believe in offering food made from only the freshest ingredients, sourced as locally as possible.  We believe that the freshness of our ingredients directly effects the taste of our food, and we believe in supporting the local economy.</p>
 						</div>
 					</section>
 				</section>
@@ -182,6 +184,7 @@
 
 		<!-- Scroll to top button and script -->
 		<a href="#" class="scrollToTop"><i class="fa fa-caret-up"></i></a>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvhB6gCRQdRXxObWN96pIdtp0p2nxZIeM"></script>
 		<script>
 		// Scroll to top button
 		$(document).ready(function(){
@@ -211,6 +214,17 @@
 				$(this).children('.food-item').toggle('fast');
 			});
 		});
+
+		// Load the map
+		function loadMap() {
+				var map;
+				map = new google.maps.Map(document.getElementById('map-canvas'), {
+					center: {lat: 48.0518, lng: -122.1771},
+					zoom: 11
+				});
+		}
+
+		google.maps.event.addDomListener(window, "load", loadMap);
 		</script>
 	</body>
 </html>
