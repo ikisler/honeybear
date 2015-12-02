@@ -1,10 +1,13 @@
-$mainBG: url(../img/background07.png) no-repeat center/ cover fixed;
+$sectionsMainBG: 'header' '.specials' '.about';
+$sectionsAccentBG: 'body';
+
+$mainBG: url(../img/dinner-1250x938.jpg) no-repeat center/ cover fixed;
+$accentBG: url(../img/bricks-1350x900.jpg) no-repeat center/ cover fixed;
+
 $mainBgColor: #44bdb8;
 $mainFont: 20px arial, sans-serif;
 $mainFontColor: #fff;
 $mainLineHeight: 130%;
-
-$accentBG: url(../img/food-plate-toast-restaurant02.jpg) no-repeat center/ cover fixed;
 
 $centerAlignMargin: 15px auto;
 
@@ -18,11 +21,24 @@ $linkColor: #ffcc66;
 $noUnderline: none;
 $textShadow: 0px 0px 10px darken($mainBgColor, 80%);
 
+$sectionBorder: solid 30px black;
 $menuCategoryHeaderFont: 2em;
 $foodMargin: 0 30px;
 $foodDescriptionFont: 0.9em;
 
 $aboutDescriptionMargin: 0 30px 30px 30px;
+
+@each $section in $sectionsMainBG {
+	#{$section} {
+		background: $mainBG;
+	}
+}
+
+@each $section in $sectionsAccentBG {
+	#{$section} {
+		background: $accentBG;
+	}
+}
 
 /*** Fontawesome Icons ***/
 .fa:before {
@@ -30,39 +46,30 @@ $aboutDescriptionMargin: 0 30px 30px 30px;
 	color: #fff;
 }
 
+.social-media-buttons {
+	text-align: $rightAlignText;
+	padding: $foodMargin;
+}
+
 body {
-	background: $mainBG;
-	background-color: $mainBgColor;
 	font: $mainFont;
 	color: $mainFontColor;
 	line-height: $mainLineHeight;
 	
 }
 
+header, .menu, .specials, .location, .about {
+	border-bottom: $sectionBorder;
+}
+
 p {
 	margin: $aboutDescriptionMargin;
-}
-
-.logo {
-	margin: $centerAlignMargin;
-}
-
-.social-media-buttons {
-	text-align: $rightAlignText;
-	padding: $foodMargin;
 }
 
 h1 {
 	font: $headerFonts;
 	text-align: $centerAlignText;
-}
-
-nav {
-	background-color: $navAndFooterBG;
-}
-
-.nav-link {
-	font-size: $navFontSize;
+	margin-top: 0;
 }
 
 a {
@@ -75,11 +82,25 @@ a {
 	}
 }
 
+/*** Navigation ***/
+nav {
+	background-color: $navAndFooterBG;
+}
+
+.nav-link {
+	font-size: $navFontSize;
+}
+
+/*** Header and Logo ***/
 header {
-	background: $accentBG;
 	padding: 15px;
 }
 
+.logo {
+	margin: $centerAlignMargin;
+}
+
+/*** Menu Section ***/
 .col-sm-4 {
 	padding-bottom: 10px;
 }
@@ -104,15 +125,12 @@ header {
 	font-size: $foodDescriptionFont;
 }
 
+/*** Specials Section ***/
 .specials {
 	text-align: $centerAlignText;
-	background: $accentBG;
 }
 
-.about {
-	background: $accentBG;
-}
-
+/*** Footer ***/
 footer {
 	text-align: $rightAlignText;
 	padding: 15px;
@@ -137,4 +155,87 @@ footer {
 
 .scrollToTop:hover{
 	text-decoration:none;
+}
+
+/*** Responsive ***/
+@media (max-width: 500px) {
+		@each $section in $sectionsMainBG {
+		#{$section} {
+			background: url(../img/dinner-500x375.jpg) no-repeat center/ cover fixed;
+		}
+	}
+
+	@each $section in $sectionsAccentBG {
+		#{$section} {
+			background: url(../img/bricks-500x333.jpg) no-repeat center/ cover fixed;
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.logo {
+		width: 20%;
+		min-width: 100px;
+		margin: 0 5px 0 0;
+		display: inline-block;
+	}
+
+	header {
+		h1 {
+			display: none;
+			font-size: 1.5em;
+		}
+
+		vertical-align: middle;
+	}
+
+	.social-media-buttons {
+		display: inline-block;
+		float: right;
+		margin: 15px 0;
+	}
+
+	.nav-link {
+		font-size: 1.5em;
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	.menu-category-header {
+		font-size: 1.8em;
+	}
+
+	body {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 750px) {
+	@each $section in $sectionsMainBG {
+		#{$section} {
+			background: url(../img/dinner-750x563.jpg) no-repeat center/ cover fixed;
+		}
+	}
+
+	@each $section in $sectionsAccentBG {
+		#{$section} {
+			background: url(../img/bricks-750x500.jpg) no-repeat center/ cover fixed;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	@each $section in $sectionsMainBG {
+		#{$section} {
+			background: url(../img/dinner-1000x750.jpg) no-repeat center/ cover fixed;
+		}
+	}
+
+	@each $section in $sectionsAccentBG {
+		#{$section} {
+			background: url(../img/bricks-1000x667.jpg) no-repeat center/ cover fixed;
+		}
+	}
 }
