@@ -1,0 +1,82 @@
+/*** Fontawesome Icons ***/
+.fa:before {
+  font: 2em "FontAwesome", sans-serif;
+  color: #fff; }
+
+.container {
+  background-color: #22605d;
+  opacity: 0.9; }
+
+body {
+  background: url(../img/background07.png) no-repeat center/cover fixed;
+  background-color: #44bdb8;
+  font: 20px arial, sans-serif;
+  color: #fff;
+  line-height: 130%; }
+
+.logo {
+  margin: 15px auto; }
+
+.social-media-buttons {
+  text-align: right;
+  padding: 0 30px; }
+
+h1 {
+  font: 4em "Brush Script MT", "Lucida Bright", cursive;
+  text-align: center; }
+
+.nav-link {
+  font-size: 2.5em; }
+
+a {
+  color: #ffcc66; }
+  a:hover {
+    text-decoration: none;
+    color: #ffcc66;
+    text-shadow: 0px 0px 10px black; }
+
+.col-sm-4 {
+  height: 350px; }
+
+.menu-category-header {
+  font: 4em "Brush Script MT", "Lucida Bright", cursive;
+  font-size: 2em;
+  text-align: center; }
+
+.food-item {
+  margin: 0 30px; }
+
+.food-description {
+  margin: 15px auto;
+  margin-top: 0;
+  font-size: 0.9em; }
+
+.specials {
+  text-align: center; }
+
+.about p {
+  margin: 0 30px 30px 30px; }
+
+footer {
+  text-align: right;
+  margin: 15px auto;
+  padding: 10px; }
+
+/*** Scroll to top button ***/
+.scrollToTop {
+  width: 70px;
+  height: 60px;
+  padding: 10px;
+  position: fixed;
+  top: 75px;
+  right: 10px;
+  display: none; }
+
+.scrollToTop img {
+  width: 50px;
+  height: 50px; }
+
+.scrollToTop:hover {
+  text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
